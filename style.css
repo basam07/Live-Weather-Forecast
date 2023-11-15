@@ -14,15 +14,27 @@ body {
 .card{
   width: 50%;
   max-width: 450px;
-  background: linear-gradient(135deg, #00feba, #5b548a);
-  color: #fff;
-  overflow: hidden;
-  border-radius: 20px;
-  margin: 100px auto 0;
-  padding: 40px 35px;
-  text-align: center;
+  margin: 50px auto;
+  background-image: linear-gradient(163deg, #1d00d6, #4d1cff 100%);
+ border-radius: 20px;
+ transition: all .3s;
 }
 
+.card2{
+  width: 100%;
+  max-width: 450px;
+  background: linear-gradient(135deg, #b84cf7, #1d00d6);
+  color: #fff;
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  transition: all .2s;
+}
+
+.card2:hover {
+  transform: scale(0.98);
+  border-radius: 20px;
+ }
 
 /* search */
 .search {
@@ -50,18 +62,27 @@ body {
 }
 
 .search button {
-  width: 50px;
+  width: 40px;
   height: 40px;
   margin-left: 10px;
   border: none;
   outline: none;
-  padding: 10px 20px;
+  padding: 10px 10px;
   font-size: 18px;
   font-weight: 600;
   color: #222;
-  background: #00feba;
+  background: rgb(255, 255, 255);
   border-radius: 30px;
   cursor: pointer;
+}
+
+.search button:hover{
+  background: rgb(192, 235, 255);
+}
+
+.search button:active{
+  background: rgb(255, 199, 199);
+  transform: scale(.95);
 }
 
 .search button img {
